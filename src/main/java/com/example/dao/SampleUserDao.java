@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.example.model.SampleUser;
 
 @Mapper
-//@Repository
+@Repository
 public interface SampleUserDao {
 
 	 List<SampleUser> selectUserAll() throws Exception ;

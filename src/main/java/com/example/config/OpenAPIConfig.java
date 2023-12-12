@@ -10,8 +10,8 @@ import io.swagger.v3.oas.models.info.License;
 
 @Configuration
 public class OpenAPIConfig {
-	@Bean
-	public OpenAPI userOpenAPI() {
+    @Bean
+    OpenAPI userOpenAPI() {
 		return new OpenAPI()
 				.info(new Info().title("User API")
 	            .description("SampleUser application")

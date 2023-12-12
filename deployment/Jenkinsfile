@@ -21,6 +21,7 @@ podTemplate(
     	nfsVolume( mountPath: '/root/.m2', serverAddress: '10.193.24.247', serverPath: '/data/maven', readOnly: false ),
     ]
 ) 
+
 {
 	node(label) {
 		stage("Get Source") {

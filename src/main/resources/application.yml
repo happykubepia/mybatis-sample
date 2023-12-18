@@ -24,6 +24,4 @@ mybatis:
 springdoc:
   packages-to-scan: com.example.rest
   paths-to-match: /**
-  swagger-ui.configUrl: /mybatis-sample/v3/api-docs/swagger-config  
-
   

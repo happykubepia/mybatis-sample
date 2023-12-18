@@ -10,12 +10,12 @@ spring:
     url: jdbc:mysql://${DB_SERVER:165.192.105.57}:${DB_PORT:30991}/${DB_NAME:mydb}?useUnicode=true&characterEncoding=utf-8
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:P@ssw0rd$}
-    hikari:
-      connection-test-query: 'SELECT 1  '
-      connection-timeout: 5000
-      maximum-pool-size: 30
-      minimum-idle: 2
-      validation-timeout: 1000
+    #hikari:
+    #  connection-test-query: 'SELECT 1  '
+    #  connection-timeout: 5000
+    #  maximum-pool-size: 30
+    #  minimum-idle: 2
+    #  validation-timeout: 1000
 mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
   configuration:

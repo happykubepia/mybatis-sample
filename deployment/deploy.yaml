@@ -15,12 +15,13 @@ spec:
       labels:
         app: mybatis-sample
     spec:
+      imagePullSecrets:
+      - name: dockerhub   
+       
       containers:
         - name: mybatis-sample
           image: docker.io/hiondal/mybatis-sample:latest
           imagePullPolicy: Always
-          imagePullSecrets:
-          - name: dockerhub
           env:
             - name: PORT
               value: "8080"
@@ -40,7 +41,7 @@ spec:
             limits:
               cpu: 500m
               memory: 1024Mi
-
+      
 ---
 
 kind: ConfigMap
